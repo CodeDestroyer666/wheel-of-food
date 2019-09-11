@@ -17,4 +17,12 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
-module.exports = app;
+const isInLambda = !!process.env.LAMBDA_TASK_ROOT;
+if (isInLambda) {
+    const serverlessExpress = require('aws-serverless-express');
+    const server = serverlessExpress.createServer(app);
+    exports.main = (event, context) => serverlessExpress.proxy(server, event, context)
+} else {
+    module.exports = app;
+}
+
