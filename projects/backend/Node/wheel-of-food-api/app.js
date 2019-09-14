@@ -21,7 +21,12 @@ const isInLambda = !!process.env.LAMBDA_TASK_ROOT;
 if (isInLambda) {
     const serverlessExpress = require('aws-serverless-express');
     const server = serverlessExpress.createServer(app);
-    exports.main = (event, context) => serverlessExpress.proxy(server, event, context)
+    exports.main = (event, context) => {
+        if (event.path.startsWith('/v1')) {
+         event.path = event.path.slice(3);
+        }
+        serverlessExpress.proxy(server, event, context);
+    }
 } else {
     module.exports = app;
 }
