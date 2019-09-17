@@ -2,6 +2,8 @@ import React from 'react';
 
 import { connect } from 'react-redux';
 
+import { withRouter } from 'react-router-dom'
+
 import { addNumber } from '../redux/actions';
 
 class Counter extends React.Component {
@@ -28,4 +30,4 @@ const mapStateToProps = function (state) {
     return { count: state.count };
 };
 
-export default connect(mapStateToProps, { addNumber })(Counter);
+export default withRouter(connect(mapStateToProps, { addNumber })(Counter));
