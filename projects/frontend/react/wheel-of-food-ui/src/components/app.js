@@ -4,12 +4,18 @@ import { connect } from 'react-redux';
 
 import { withRouter } from 'react-router-dom'
 
-import { addNumber } from '../redux/actions';
+import { addNumber, fetchExampleData } from '../redux/actions';
 
 class Counter extends React.Component {
 
+
+
     onAddClick = () => {
         this.props.addNumber(7);
+    }
+
+    onFetchExampleData = () => {
+        this.props.fetchExampleData();
     }
 
     render() {
@@ -18,8 +24,14 @@ class Counter extends React.Component {
                 <div>
                     {this.props.count}
                 </div>
+                <div>
+                    {this.props.exampleData}
+                </div>
                 <button onClick={this.onAddClick}>
                     Add 7!
+                </button>
+                <button onClick={this.onFetchExampleData}>
+                    Fetch example data
                 </button>
             </div>
         );
@@ -27,7 +39,10 @@ class Counter extends React.Component {
 }
 
 const mapStateToProps = function (state) {
-    return { count: state.count };
+    return {
+        count: state.count,
+        exampleData: state.exampleData,
+    };
 };
 
-export default withRouter(connect(mapStateToProps, { addNumber })(Counter));
+export default withRouter(connect(mapStateToProps, { addNumber, fetchExampleData })(Counter));

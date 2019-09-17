@@ -46,7 +46,6 @@ class Board extends React.Component {
 
 export class Game extends React.Component {
     constructor(props) {
-        console.log(props);
         super(props);
         this.state = {
             history: [{
@@ -84,7 +83,6 @@ export class Game extends React.Component {
     }
 
     render() {
-        console.log(this.props);
         const history = this.state.history;
         const current = history[this.state.stepNumber];
         const winner = calculateWinner(current.squares);

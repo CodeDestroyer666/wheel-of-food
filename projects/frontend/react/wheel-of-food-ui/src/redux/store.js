@@ -1,6 +1,18 @@
-import { createStore } from 'redux';
-import { count } from './reducers';
+import { createStore, applyMiddleware, combineReducers } from 'redux';
+import createSagaMiddleware from 'redux-saga';
 
-export const store = createStore(count);
+import { count, handleExampleData } from './reducers';
+import mySaga from './sagas';
 
-console.log(store.getState());
+// create the saga middleware
+const sagaMiddleware = createSagaMiddleware();
+
+const rootReducer = combineReducers({ count: count, exampleData: handleExampleData })
+
+export const store = createStore(
+    rootReducer,
+    applyMiddleware(sagaMiddleware)
+);
+
+// then run the saga
+sagaMiddleware.run(mySaga);
