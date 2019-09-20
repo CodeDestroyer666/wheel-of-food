@@ -1,4 +1,10 @@
-const whitelist = ['http://localhost:3001', 'https://*.wheeloffood.codedestroyer666.dev'];
+const whitelist = [
+    'http://localhost:3001',
+    'https://react.wheeloffood.codedestroyer666.dev',
+    'https://angular.wheeloffood.codedestroyer666.dev',
+    'https://vue.wheeloffood.codedestroyer666.dev',
+    'https://ember.wheeloffood.codedestroyer666.dev',
+];
 
 const corsOptions = {
     origin: function (origin, callback) {
