@@ -1,8 +1,12 @@
 import { call, put, takeLatest } from 'redux-saga/effects'
 
+import * as ActionTypes from './actionTypes';
+
 class Api {
     static fetchExample() {
-        return 'moi';
+        console.log('requesting data');
+        return fetch('http://localhost/users')
+            .then(response => response.text());
     }
 }
 
@@ -10,6 +14,7 @@ class Api {
 function* fetchExampleData(action) {
     try {
         const data = yield call(Api.fetchExample);
+        console.log(data);
         yield put({ type: "EXAMPLE_FETCH_SUCCEEDED", data: data });
     } catch (e) {
         yield put({ type: "EXAMPLE_FETCH_FAILED", message: e.message });
@@ -25,7 +30,7 @@ function* fetchExampleData(action) {
   and only the latest one will be run.
 */
 function* mySaga() {
-    yield takeLatest("EXAMPLE_FETCH_REQUESTED", fetchExampleData);
+    yield takeLatest(ActionTypes.EXAMPLE_FETCH_REQUESTED, fetchExampleData);
 }
 
 export default mySaga;
