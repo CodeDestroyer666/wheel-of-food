@@ -5,7 +5,7 @@ import * as ActionTypes from './actionTypes';
 class Api {
     static fetchExample() {
         console.log('requesting data');
-        return fetch('http://localhost/users')
+        return fetch(process.env.REACT_APP_API_URL + '/users')
             .then(response => response.text());
     }
 }
