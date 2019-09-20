@@ -6,7 +6,7 @@ import { store } from './redux/store';
 
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
-import { Game } from './components/tictactoe/game'
+import Game from './components/tictactoe/game'
 import Counter from './components/app'
 
 import './index.css';
@@ -28,8 +28,10 @@ ReactDOM.render(
                 </ul>
             </nav>
 
-            <Provider store={store}><Route path="/counter/" exact component={Counter} /></Provider>
-            <Route path="/tictactoe/" exact component={Game} />
+            <Provider store={store}>
+                <Route path="/counter/" exact component={Counter} />
+                <Route path="/tictactoe/" exact component={Game} />
+            </Provider>
         </div>
     </Router>
         /*<Game />
