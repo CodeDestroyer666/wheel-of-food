@@ -1,20 +1,12 @@
-import Vue from 'vue';
+import Vue from 'vue'
 import Vuex from 'vuex';
 
-Vue.use(Vuex);
+Vue.use(Vuex)
+
+import { miscStore } from './modules/misc';
 
 export const store = new Vuex.Store({
-    state: {
-        numberOfKimmos: 10
-    },
-    mutations: {
-        incrementNumberOfKimmos(state) {
-            state.numberOfKimmos++
-        }
-    },
-    actions: {
-        incrementNumberOfKimmos(context) {
-            context.commit('incrementNumberOfKimmos');
-        }
+    modules: {
+        misc: miscStore
     }
 })

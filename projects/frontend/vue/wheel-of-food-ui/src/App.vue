@@ -25,9 +25,11 @@ export default {
     };
   },
   computed: mapState({
-    numberOfKimmos: state => state.numberOfKimmos
+    numberOfKimmos: state => state.misc.numberOfKimmos
   }),
-  methods: mapActions(["incrementNumberOfKimmos"])
+  methods: mapActions({
+    incrementNumberOfKimmos: "misc/incrementNumberOfKimmos"
+  })
 };
 </script>
 
