@@ -1,5 +1,4 @@
 const whitelist = [
-    'http://localhost:3001',
     'https://react.wheeloffood.codedestroyer666.dev',
     'https://angular.wheeloffood.codedestroyer666.dev',
     'https://vue.wheeloffood.codedestroyer666.dev',
