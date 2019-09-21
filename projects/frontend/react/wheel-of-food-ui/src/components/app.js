@@ -4,6 +4,8 @@ import { connect } from 'react-redux';
 
 import { withRouter } from 'react-router-dom'
 
+import Button from '@material-ui/core/Button';
+
 import { addNumber, fetchExampleData } from '../redux/actions';
 
 class Counter extends React.Component {
@@ -27,12 +29,12 @@ class Counter extends React.Component {
                 <div>
                     {this.props.exampleData}
                 </div>
-                <button onClick={this.onAddClick}>
+                <Button variant="contained" color="primary" onClick={this.onAddClick}>
                     Add 7!
-                </button>
-                <button onClick={this.onFetchExampleData}>
+                </Button>
+                <Button variant="contained" color="primary" onClick={this.onFetchExampleData}>
                     Fetch example data
-                </button>
+                </Button>
             </div>
         );
     }
