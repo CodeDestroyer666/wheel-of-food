@@ -4,6 +4,8 @@
     <HelloWorld msg="Moro" />
     <MyFirstComponent v-for="n in numberOfKimmos" :key="n" :number="n" />
     <button @click="incrementNumberOfKimmos">Add 1 Kimmo</button>
+    <router-link to="/dashboard">View Dashboard with route</router-link>
+    <router-view></router-view>
   </div>
 </template>
 
