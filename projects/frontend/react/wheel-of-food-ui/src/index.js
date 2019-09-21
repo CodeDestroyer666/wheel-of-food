@@ -9,6 +9,7 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Button from '@material-ui/core/Button';
+import Paper from '@material-ui/core/Paper';
 
 import Game from './components/tictactoe/game'
 import Counter from './components/app'
@@ -29,11 +30,12 @@ ReactDOM.render(
                     </nav>
                 </Toolbar>
             </AppBar>
-
-            <Provider store={store}>
-                <Route path="/counter/" exact component={Counter} />
-                <Route path="/tictactoe/" exact component={Game} />
-            </Provider>
+            <Paper>
+                <Provider store={store}>
+                    <Route path="/counter/" exact component={Counter} />
+                    <Route path="/tictactoe/" exact component={Game} />
+                </Provider>
+            </Paper>
         </div>
     </Router>
         /*<Game />
