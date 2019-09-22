@@ -10,7 +10,7 @@ export const dashboardStore = {
     },
     actions: {
         fetchDashboardData(context) {
-            fetch('http://localhost:3000/users')
+            fetch(process.env.VUE_APP_API_URL + '/users')
                 .then(response => response.text())
                 .then(function (data) {
                     context.commit('updateDashboardData', data);
