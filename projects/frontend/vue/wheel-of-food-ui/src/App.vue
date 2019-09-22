@@ -1,24 +1,43 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app" v-if="initialized">
+    <img alt="Vue logo" src="./assets/logo.png" />
+    <HelloWorld msg="Moro" />
+    <MyFirstComponent v-for="n in numberOfKimmos" :key="n" :number="n" />
+    <button @click="incrementNumberOfKimmos">Add 1 Kimmo</button>
+    <router-link to="/dashboard">View Dashboard with route</router-link>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import { mapState, mapActions } from "vuex";
+
+import HelloWorld from "./components/HelloWorld.vue";
+import MyFirstComponent from "./components/MyFirstComponent.vue";
 
 export default {
-  name: 'app',
+  name: "app",
   components: {
-    HelloWorld
-  }
-}
+    HelloWorld,
+    MyFirstComponent
+  },
+  data: function() {
+    return {
+      initialized: true
+    };
+  },
+  computed: mapState({
+    numberOfKimmos: state => state.misc.numberOfKimmos
+  }),
+  methods: mapActions({
+    incrementNumberOfKimmos: "misc/incrementNumberOfKimmos"
+  })
+};
 </script>
 
 <style>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;

@@ -4,6 +4,8 @@ import { connect } from 'react-redux';
 
 import { withRouter } from 'react-router-dom';
 
+import Button from '@material-ui/core/Button';
+
 import { gameMove, jumpToGameHistory } from '../../redux/actions';
 
 function Square(props) {
@@ -72,7 +74,7 @@ class Game extends React.Component {
             return (
                 <li
                     key={move}>
-                    <button onClick={() => this.jumpTo(move)}>{desc}</button>
+                    <Button variant="contained" color="primary" onClick={() => this.jumpTo(move)}>{desc}</Button>
                 </li>
             );
         });

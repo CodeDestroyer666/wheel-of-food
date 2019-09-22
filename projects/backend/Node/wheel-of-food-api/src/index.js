@@ -1,15 +1,19 @@
 const express = require('express');
 const cors = require('cors');
+const compression = require('compression');
+
 const api = require('./api');
 const corsOptions = require('./cors');
 
 const app = express();
 
-const corsOrigin = 'http://localhost:3001'; // Get this of conf file or something
-/*app.use(cors({
-    origin: corsOrigin
-}));**/
-app.use(cors(corsOptions));
+if (process.env.NODE_ENV === 'production') {
+    app.use(cors(corsOptions));
+} else {
+    app.use(cors());
+}
+
+app.use(compression());
 app.use('/', api);
 
 const isInLambda = !!process.env.LAMBDA_TASK_ROOT;
@@ -23,9 +27,6 @@ if (isInLambda) {
         serverlessExpress.proxy(server, event, context);
     }
 } else {
-    app.listen(80, function () {
-        console.log('CORS-enabled web server listening on port 80')
-    })
     module.exports = app;
 }
 
