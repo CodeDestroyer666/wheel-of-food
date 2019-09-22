@@ -1,5 +1,5 @@
 <template>
-  <div v-on:click="greet">Kimmo {{number}} {{fromFunction().split('').reverse().join('')}}</div>
+  <div v-on:click="greet">Kimmo {{number}} {{fromFunction() | reverse}}</div>
 </template>
 
 <script>
@@ -17,6 +17,14 @@ export default {
     },
     fromFunction: function() {
       return "This comes from function";
+    }
+  },
+  filters: {
+    reverse: function(value) {
+      return value
+        .split("")
+        .reverse()
+        .join("");
     }
   }
 };
