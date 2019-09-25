@@ -1,5 +1,6 @@
 const express = require('express');
 const userRouter = require('./routes/users');
+const rentalsRouter = require('./routes/rentals');
 
 const router = express.Router();
 
@@ -12,5 +13,6 @@ router.get('/', function (req, res, next) {
 
 api.use('/', router);
 api.use('/users', userRouter);
+api.use('/rentals', rentalsRouter);
 
 module.exports = api;

@@ -1,5 +1,5 @@
 export default function () {
-    this.namespace = '/api';
+    this.namespace = '/api/v1';
 
     let rentals = [{
         type: 'rentals',
