@@ -14,7 +14,7 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 app.use(compression());
-app.use('/', api);
+app.use('/api/v1', api);
 
 const isInLambda = !!process.env.LAMBDA_TASK_ROOT;
 if (isInLambda) {

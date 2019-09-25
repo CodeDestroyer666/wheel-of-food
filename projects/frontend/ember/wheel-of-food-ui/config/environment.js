@@ -30,6 +30,9 @@ module.exports = function (environment) {
         // ENV.APP.LOG_TRANSITIONS_INTERNAL = true;
         // ENV.APP.LOG_VIEW_LOOKUPS = true;
         ENV.APP.API_URL = 'http://localhost:3000';
+        ENV['ember-cli-mirage'] = {
+            enabled: false
+        };
     }
 
     if (environment === 'test') {
@@ -46,7 +49,7 @@ module.exports = function (environment) {
 
     if (environment === 'production') {
         // here you can enable a production-specific feature
-        ENV.APP.API_URL = 'https://api2.wheeloffood.codedestroyer666.dev/v1';
+        ENV.APP.API_URL = 'https://api2.wheeloffood.codedestroyer666.dev';
     }
 
     return ENV;
