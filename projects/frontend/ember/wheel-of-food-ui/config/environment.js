@@ -49,7 +49,7 @@ module.exports = function (environment) {
 
     if (environment === 'production') {
         // here you can enable a production-specific feature
-        ENV.APP.API_URL = 'https://api2.wheeloffood.codedestroyer666.dev';
+        ENV.APP.API_URL = 'https://api.wheeloffood.codedestroyer666.dev';
     }
 
     return ENV;
