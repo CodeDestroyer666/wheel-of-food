@@ -7,6 +7,7 @@
     "start": "nodemon --exec babel-node ./bin/www"
   },
   "dependencies": {
+    "@babel/runtime": "^7.6.2",
     "aws-sdk": "^2.537.0",
     "compression": "^1.7.4",
     "cookie-parser": "~1.4.4",
@@ -20,6 +21,7 @@
     "@babel/cli": "^7.6.2",
     "@babel/core": "^7.6.2",
     "@babel/node": "^7.6.2",
+    "@babel/plugin-transform-runtime": "^7.6.2",
     "@babel/preset-env": "^7.6.2",
     "eslint": "^6.5.0"
   }
