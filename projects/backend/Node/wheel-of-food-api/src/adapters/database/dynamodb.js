@@ -14,8 +14,8 @@ function constructModel(modelClass, item) {
                 category: item.Category.S,
                 bedrooms: item.Bedrooms.N,
                 image: item.Image.S,
-                description: item.Description.S
-            }
+                description: item.Description.S,
+            };
             break;
     }
 
@@ -40,12 +40,12 @@ export default class DynamoDbAdapter {
     }
 
     async getItems(model) {
-        const testParams = {
+        const params = {
             TableName: model.name
         };
         const items = new Array;
 
-        await this.ddb.scan(testParams, function (err, data) {
+        await this.ddb.scan(params, function (err, data) {
             if (err) {
                 console.log('Error', err);
             } else {
@@ -57,5 +57,27 @@ export default class DynamoDbAdapter {
         }).promise();
 
         return items;
+    }
+
+    async getItem(model, id) {
+        const params = {
+            TableName: model.name,
+            Key: {
+                Id: { 'S': id }
+            }
+        };
+
+        let item = null;
+
+        await this.ddb.getItem(params, function (err, data) {
+            if (err) {
+                console.log('Error', err);
+            } else {
+                // console.log("Success", data.Items);
+                item = constructModel(model, data.Item);
+            }
+        }).promise();
+
+        return item;
     }
 }
