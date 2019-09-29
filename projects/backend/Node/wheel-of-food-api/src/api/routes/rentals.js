@@ -1,6 +1,8 @@
 const express = require('express');
 const router = express.Router();
 
+const dbadapter = require('../../adapters/dbadapter');
+
 const rentals = [{
     type: 'rentals',
     id: 'grand-old-mansion',
@@ -40,6 +42,8 @@ const rentals = [{
 }];
 
 router.get('/', function (req, res, next) {
+
+    dbadapter.getItems();
 
     if (req.query.city !== undefined) {
         let filteredRentals = rentals.filter(function (i) {

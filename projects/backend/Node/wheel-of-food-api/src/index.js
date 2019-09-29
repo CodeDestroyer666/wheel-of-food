@@ -1,9 +1,11 @@
+import 'dotenv/config';
 const express = require('express');
 const cors = require('cors');
 const compression = require('compression');
 
 const api = require('./api');
 const corsOptions = require('./cors');
+
 
 const app = express();
 
