@@ -1,7 +1,8 @@
 const express = require('express');
 const router = express.Router();
 
-const dbadapter = require('../../adapters/dbadapter');
+import dbAdapter from '../../adapters/database';
+import { Rental } from '../../models';
 
 const rentals = [{
     type: 'rentals',
@@ -43,15 +44,15 @@ const rentals = [{
 
 router.get('/', function (req, res, next) {
 
-    dbadapter.getItems();
-
     if (req.query.city !== undefined) {
         let filteredRentals = rentals.filter(function (i) {
             return i.attributes.city.toLowerCase().indexOf(req.query.city.toLowerCase()) !== -1;
         });
         res.send({ data: filteredRentals });
     } else {
-        res.send({ data: rentals });
+        dbAdapter.getItems(Rental).then(items => {
+            res.send({ data: items });
+        });
     }
 });
 
