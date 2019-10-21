@@ -1,0 +1,364 @@
+{
+    "OneArmedDinner": [
+        {
+            "PutRequest": {
+                "Item": {
+                    "PK": {
+                        "S": "RECIPE_cb89cab8-3d0c-4602-b51d-429d6c35d3c5"
+                    },
+                    "SK": {
+                        "S": "RECIPE"
+                    },
+                    "GSISK": {
+                        "S": "Pizza"
+                    },
+                    "Instructions": {
+                        "S": "Roll, put toppings, bake"
+                    },
+                    "Image": {
+                        "S": "some binary GSISK"
+                    }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "PK": {
+                        "S": "RECIPE_9d02d13b-4fe9-4faa-9ae6-c9b8f08befc2"
+                    },
+                    "SK": {
+                        "S": "RECIPE"
+                    },
+                    "GSISK": {
+                        "S": "Hamburger"
+                    },
+                    "Instructions": {
+                        "S": "Flip and fill"
+                    },
+                    "Image": {
+                        "S": "some binary GSISK"
+                    }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "PK": {
+                        "S": "RECIPE_f44aaf7b-92e5-4f50-b503-0104b98283f0"
+                    },
+                    "SK": {
+                        "S": "RECIPE"
+                    },
+                    "GSISK": {
+                        "S": "Lasagne"
+                    },
+                    "Instructions": {
+                        "S": "Bake in oven"
+                    },
+                    "Image": {
+                        "S": "some binary GSISK"
+                    }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "PK": {
+                        "S": "RECIPE_558c5207-ac43-4436-b58e-82cbd40daf60"
+                    },
+                    "SK": {
+                        "S": "RECIPE"
+                    },
+                    "GSISK": {
+                        "S": "Spaghetti"
+                    },
+                    "Instructions": {
+                        "S": "Make sauce, cook spaghetti"
+                    },
+                    "Image": {
+                        "S": "some binary GSISK"
+                    }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "PK": {
+                        "S": "MENU_558c5207-ac43-4436-b58e-82cbd40daf60"
+                    },
+                    "SK": {
+                        "S": "MENU"
+                    },
+                    "GSISK": {
+                        "S": "2008-04-10 13:30:00Z"
+                    }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "PK": {
+                        "S": "INGREDIENT_1a797694-9bd5-4cbc-b0b1-dbd6b1110352"
+                    },
+                    "SK": {
+                        "S": "INGREDIENT"
+                    },
+                    "GSISK": {
+                        "S": "Pepperoni"
+                    }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "PK": {
+                        "S": "INGREDIENT_03c9f345-7400-4449-a5de-0ee0a28b0a98"
+                    },
+                    "SK": {
+                        "S": "INGREDIENT"
+                    },
+                    "GSISK": {
+                        "S": "Cheese"
+                    }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "PK": {
+                        "S": "INGREDIENT_2b579a44-6c2c-4530-a15e-7feb2d6a5582"
+                    },
+                    "SK": {
+                        "S": "INGREDIENT"
+                    },
+                    "GSISK": {
+                        "S": "Burger patties"
+                    }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "PK": {
+                        "S": "INGREDIENT_05232c3a-0c39-4738-971a-278a650e6a0c"
+                    },
+                    "SK": {
+                        "S": "INGREDIENT"
+                    },
+                    "GSISK": {
+                        "S": "Buns"
+                    }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "PK": {
+                        "S": "INGREDIENT_e02a7f37-d03a-4557-9af6-f06b2dea8cb7"
+                    },
+                    "SK": {
+                        "S": "INGREDIENT"
+                    },
+                    "GSISK": {
+                        "S": "Tomato sauce"
+                    }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "PK": {
+                        "S": "INGREDIENT_c0fa7631-b91a-48ed-bc55-8f1b0c07fc61"
+                    },
+                    "SK": {
+                        "S": "INGREDIENT"
+                    },
+                    "GSISK": {
+                        "S": "Pasta"
+                    }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "PK": {
+                        "S": "TAG_cb89cab8-3d0c-4602-b51d-429d6c35d3c5"
+                    },
+                    "SK": {
+                        "S": "TAG"
+                    },
+                    "GSISK": {
+                        "S": "Healthy"
+                    }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "PK": {
+                        "S": "TAG_9d02d13b-4fe9-4faa-9ae6-c9b8f08befc2"
+                    },
+                    "SK": {
+                        "S": "TAG"
+                    },
+                    "GSISK": {
+                        "S": "Easy"
+                    }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "PK": {
+                        "S": "TAG_f44aaf7b-92e5-4f50-b503-0104b98283f0"
+                    },
+                    "SK": {
+                        "S": "TAG"
+                    },
+                    "GSISK": {
+                        "S": "Fast"
+                    }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "PK": {
+                        "S": "TAG_558c5207-ac43-4436-b58e-82cbd40daf60"
+                    },
+                    "SK": {
+                        "S": "TAG"
+                    },
+                    "GSISK": {
+                        "S": "Weekend"
+                    }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "PK": {
+                        "S": "TAG_1a797694-9bd5-4cbc-b0b1-dbd6b1110352"
+                    },
+                    "SK": {
+                        "S": "TAG"
+                    },
+                    "GSISK": {
+                        "S": "Meat"
+                    }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "PK": {
+                        "S": "INCLUDE"
+                    },
+                    "SK": {
+                        "S": "RECIPE_cb89cab8-3d0c-4602-b51d-429d6c35d3c5#2008-04-10 13:30:00Z"
+                    }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "PK": {
+                        "S": "INCLUDE"
+                    },
+                    "SK": {
+                        "S": "RECIPE_9d02d13b-4fe9-4faa-9ae6-c9b8f08befc2#2008-04-10 13:30:00Z"
+                    }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "PK": {
+                        "S": "INCLUDE"
+                    },
+                    "SK": {
+                        "S": "RECIPE_f44aaf7b-92e5-4f50-b503-0104b98283f0#2008-04-10 13:30:00Z"
+                    }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "PK": {
+                        "S": "EXCLUDE"
+                    },
+                    "SK": {
+                        "S": "RECIPE_cb89cab8-3d0c-4602-b51d-429d6c35d3c5#2008-04-10 13:31:00Z"
+                    }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "PK": {
+                        "S": "INCLUDE"
+                    },
+                    "SK": {
+                        "S": "RECIPE_558c5207-ac43-4436-b58e-82cbd40daf60#2008-04-10 13:32:00Z"
+                    }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "PK": {
+                        "S": "MENU_558c5207-ac43-4436-b58e-82cbd40daf60"
+                    },
+                    "SK": {
+                        "S": "RECIPE_558c5207-ac43-4436-b58e-82cbd40daf60"
+                    }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "PK": {
+                        "S": "MENU_558c5207-ac43-4436-b58e-82cbd40daf60"
+                    },
+                    "SK": {
+                        "S": "RECIPE_f44aaf7b-92e5-4f50-b503-0104b98283f0"
+                    }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "PK": {
+                        "S": "MENU_558c5207-ac43-4436-b58e-82cbd40daf60"
+                    },
+                    "SK": {
+                        "S": "RECIPE_9d02d13b-4fe9-4faa-9ae6-c9b8f08befc2"
+                    }
+                }
+            }
+        }
+    ]
+}

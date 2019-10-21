@@ -1,0 +1,289 @@
+{
+    "OneArmedDinner": [
+        {
+            "PutRequest": {
+                "Item": {
+                    "PK": {
+                        "S": "RECIPE_cb89cab8-3d0c-4602-b51d-429d6c35d3c5"
+                    },
+                    "SK": {
+                        "S": "TAG_558c5207-ac43-4436-b58e-82cbd40daf60"
+                    },
+                    "GSISK": {
+                        "S": "TAG"
+                    }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "PK": {
+                        "S": "RECIPE_cb89cab8-3d0c-4602-b51d-429d6c35d3c5"
+                    },
+                    "SK": {
+                        "S": "TAG_cb89cab8-3d0c-4602-b51d-429d6c35d3c5"
+                    },
+                    "GSISK": {
+                        "S": "TAG"
+                    }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "PK": {
+                        "S": "RECIPE_9d02d13b-4fe9-4faa-9ae6-c9b8f08befc2"
+                    },
+                    "SK": {
+                        "S": "TAG_1a797694-9bd5-4cbc-b0b1-dbd6b1110352"
+                    },
+                    "GSISK": {
+                        "S": "TAG"
+                    }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "PK": {
+                        "S": "RECIPE_9d02d13b-4fe9-4faa-9ae6-c9b8f08befc2"
+                    },
+                    "SK": {
+                        "S": "TAG_9d02d13b-4fe9-4faa-9ae6-c9b8f08befc2"
+                    },
+                    "GSISK": {
+                        "S": "TAG"
+                    }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "PK": {
+                        "S": "RECIPE_f44aaf7b-92e5-4f50-b503-0104b98283f0"
+                    },
+                    "SK": {
+                        "S": "TAG_cb89cab8-3d0c-4602-b51d-429d6c35d3c5"
+                    },
+                    "GSISK": {
+                        "S": "TAG"
+                    }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "PK": {
+                        "S": "RECIPE_f44aaf7b-92e5-4f50-b503-0104b98283f0"
+                    },
+                    "SK": {
+                        "S": "TAG_f44aaf7b-92e5-4f50-b503-0104b98283f0"
+                    },
+                    "GSISK": {
+                        "S": "TAG"
+                    }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "PK": {
+                        "S": "RECIPE_558c5207-ac43-4436-b58e-82cbd40daf60"
+                    },
+                    "SK": {
+                        "S": "TAG_9d02d13b-4fe9-4faa-9ae6-c9b8f08befc2"
+                    },
+                    "GSISK": {
+                        "S": "TAG"
+                    }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "PK": {
+                        "S": "RECIPE_558c5207-ac43-4436-b58e-82cbd40daf60"
+                    },
+                    "SK": {
+                        "S": "TAG_1a797694-9bd5-4cbc-b0b1-dbd6b1110352"
+                    },
+                    "GSISK": {
+                        "S": "TAG"
+                    }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "PK": {
+                        "S": "RECIPE_cb89cab8-3d0c-4602-b51d-429d6c35d3c5"
+                    },
+                    "SK": {
+                        "S": "INGREDIENT_1a797694-9bd5-4cbc-b0b1-dbd6b1110352"
+                    },
+                    "GSISK": {
+                        "S": "100g"
+                    }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "PK": {
+                        "S": "RECIPE_cb89cab8-3d0c-4602-b51d-429d6c35d3c5"
+                    },
+                    "SK": {
+                        "S": "INGREDIENT_03c9f345-7400-4449-a5de-0ee0a28b0a98"
+                    },
+                    "GSISK": {
+                        "S": "200g"
+                    }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "PK": {
+                        "S": "RECIPE_cb89cab8-3d0c-4602-b51d-429d6c35d3c5"
+                    },
+                    "SK": {
+                        "S": "INGREDIENT_e02a7f37-d03a-4557-9af6-f06b2dea8cb7"
+                    },
+                    "GSISK": {
+                        "S": "1 can"
+                    }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "PK": {
+                        "S": "RECIPE_9d02d13b-4fe9-4faa-9ae6-c9b8f08befc2"
+                    },
+                    "SK": {
+                        "S": "INGREDIENT_05232c3a-0c39-4738-971a-278a650e6a0c"
+                    },
+                    "GSISK": {
+                        "S": "8 pcs"
+                    }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "PK": {
+                        "S": "RECIPE_9d02d13b-4fe9-4faa-9ae6-c9b8f08befc2"
+                    },
+                    "SK": {
+                        "S": "INGREDIENT_2b579a44-6c2c-4530-a15e-7feb2d6a5582"
+                    },
+                    "GSISK": {
+                        "S": "4 pcs"
+                    }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "PK": {
+                        "S": "RECIPE_9d02d13b-4fe9-4faa-9ae6-c9b8f08befc2"
+                    },
+                    "SK": {
+                        "S": "INGREDIENT_03c9f345-7400-4449-a5de-0ee0a28b0a98"
+                    },
+                    "GSISK": {
+                        "S": "4 slices"
+                    }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "PK": {
+                        "S": "RECIPE_f44aaf7b-92e5-4f50-b503-0104b98283f0"
+                    },
+                    "SK": {
+                        "S": "INGREDIENT_c0fa7631-b91a-48ed-bc55-8f1b0c07fc61"
+                    },
+                    "GSISK": {
+                        "S": "1 can"
+                    }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "PK": {
+                        "S": "RECIPE_f44aaf7b-92e5-4f50-b503-0104b98283f0"
+                    },
+                    "SK": {
+                        "S": "INGREDIENT_e02a7f37-d03a-4557-9af6-f06b2dea8cb7"
+                    },
+                    "GSISK": {
+                        "S": "2 cans"
+                    }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "PK": {
+                        "S": "RECIPE_f44aaf7b-92e5-4f50-b503-0104b98283f0"
+                    },
+                    "SK": {
+                        "S": "INGREDIENT_03c9f345-7400-4449-a5de-0ee0a28b0a98"
+                    },
+                    "GSISK": {
+                        "S": "200g"
+                    }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "PK": {
+                        "S": "RECIPE_558c5207-ac43-4436-b58e-82cbd40daf60"
+                    },
+                    "SK": {
+                        "S": "INGREDIENT_c0fa7631-b91a-48ed-bc55-8f1b0c07fc61"
+                    },
+                    "GSISK": {
+                        "S": "200g"
+                    }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "PK": {
+                        "S": "RECIPE_558c5207-ac43-4436-b58e-82cbd40daf60"
+                    },
+                    "SK": {
+                        "S": "INGREDIENT_e02a7f37-d03a-4557-9af6-f06b2dea8cb7"
+                    },
+                    "GSISK": {
+                        "S": "1 can"
+                    }
+                }
+            }
+        }
+    ]
+}

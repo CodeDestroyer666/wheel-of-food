@@ -1,0 +1,94 @@
+{
+    "Rental": [
+        {
+            "PutRequest": {
+                "Item": {
+                    "Id": {
+                        "S": "grand-old-mansion"
+                    },
+                    "Title": {
+                        "S": "Grand Old Mansion"
+                    },
+                    "Owner": {
+                        "S": "Veruca Salt"
+                    },
+                    "City": {
+                        "S": "San Francisco"
+                    },
+                    "Category": {
+                        "S": "Estate"
+                    },
+                    "Bedrooms": {
+                        "N": "15"
+                    },
+                    "Image": {
+                        "S": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Crane_estate_(5).jpg"
+                    },
+                    "Description": {
+                        "S": "This grand old mansion sits on over 100 acres of rolling hills and dense redwood forests."
+                    }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "Id": {
+                        "S": "urban-living"
+                    },
+                    "Title": {
+                        "S": "Urban Living"
+                    },
+                    "Owner": {
+                        "S": "Mike Teavee"
+                    },
+                    "City": {
+                        "S": "Seattle"
+                    },
+                    "Category": {
+                        "S": "Condo"
+                    },
+                    "Bedrooms": {
+                        "N": "1"
+                    },
+                    "Image": {
+                        "S": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Alfonso_13_Highrise_Tegucigalpa.jpg"
+                    },
+                    "Description": {
+                        "S": "A commuters dream. This rental is within walking distance of 2 bus stops and the Metro."
+                    }
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                "Item": {
+                    "Id": {
+                        "S": "downtown-charm"
+                    },
+                    "Title": {
+                        "S": "Downtown Charm"
+                    },
+                    "Owner": {
+                        "S": "Violet Beauregarde"
+                    },
+                    "City": {
+                        "S": "Portland"
+                    },
+                    "Category": {
+                        "S": "Apartment"
+                    },
+                    "Bedrooms": {
+                        "N": "3"
+                    },
+                    "Image": {
+                        "S": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Wheeldon_Apartment_Building_-_Portland_Oregon.jpg"
+                    },
+                    "Description": {
+                        "S": "Convenience is at your doorstep with this charming downtown rental. Great restaurants and active night life are within a few feet."
+                    }
+                }
+            }
+        }
+    ]
+}
