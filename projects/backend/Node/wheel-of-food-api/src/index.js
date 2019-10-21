@@ -3,7 +3,7 @@ const express = require('express');
 const cors = require('cors');
 const compression = require('compression');
 
-const api = require('./api');
+const api = require('./api').default;
 const corsOptions = require('./cors');
 
 
