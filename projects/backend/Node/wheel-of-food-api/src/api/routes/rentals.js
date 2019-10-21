@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 
 import dbAdapter from '../../adapters/database';
-import { Rental } from '../../models';
+import { Rental } from '../../ORM/models';
 
 router.get('/', function (req, res, next) {
 

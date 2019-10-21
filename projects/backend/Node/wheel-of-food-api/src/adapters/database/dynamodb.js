@@ -1,6 +1,6 @@
 import AWS from 'aws-sdk';
 
-import { Rental } from '../../models';
+import { Rental } from '../../ORM/models';
 
 function constructModel(modelClass, item) {
     const model = new modelClass;
