@@ -35,6 +35,7 @@ export class Recipe {
             ingredients: [],
             tags: [],
             createdTime: Date,
+            image: '' // TODO: binary data or URL?
         };
     }
 }
