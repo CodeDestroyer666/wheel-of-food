@@ -3,6 +3,10 @@
 # Restart dynamodb docker. TODO: Needs more robust implementation
 docker restart laughing_banzai
 
+# Rentals test. TODO: Remove when not needed
+aws dynamodb create-table --endpoint-url http://localhost:8000 --cli-input-json file://table/rental.json
+aws dynamodb batch-write-item --request-items file://test_data/rentals_put.json --endpoint http://localhost:8000
+
 # Create dynamodb table
 aws dynamodb create-table --endpoint-url http://localhost:8000 --cli-input-json file://table/one-armed_dinner.json
 
